@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 
-
-
 body{
     font-size: 1.3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #f7d7a1d6;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(39, 100%, 80%);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Young Serif', serif;
 }
 
 .main-header{
@@ -21,16 +22,20 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Young Serif', serif;
 }
 
 .main-header h1{
     font-size: 4em;
     margin-bottom: 1.5em;
     line-height: 1.5em;
+    
 }
 
 .main-header h1 span{
-    color: #a50202d6;
+    color: #ffffff;
 }
 
 .container{
@@ -50,7 +55,7 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     margin-bottom: 2em;
-    background-color: #000000ab;   
+    background-color: #0c0c0ee1;   
 }
 
 .card h3{
@@ -66,14 +71,14 @@ img{
 }
 
 a{
-    color: #333;
+    color: #9b9b9b;
     text-decoration: none;
 }
 
 .btn{
     display: inline-block;
-    background-color: #ffe9c2d6;
-    color: #fff;
+    background-color: black;
+    color: #ffffff;
     padding: 0.8em 1.8em;
     margin-top: 2em;
     cursor: pointer;
@@ -83,4 +88,32 @@ a{
 .btn:hover{
     opacity: 0.8;
 }
+
+.galeria{
+     margin: 2em;
+     display: flex;
+     height: 20em;
+     gap: 1em;
+}
+
+.galeria div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    flex: 1;
+    transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+
+.galeria div:hover{
+    flex: 4;
+    /* border-radius: 1.2px; */ 
+}
+
+.galeria:hover div:not(:hover){
+    filter: grayscale(1) blur(1.5px) sepia(50%) saturate(15%);
+}
+
 
